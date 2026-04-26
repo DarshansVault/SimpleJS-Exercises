@@ -1,0 +1,75 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --card-bg: #f4f4f4;
+  --nav-bg: #333;
+  --nav-text: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --card-bg: #1e1e1e;
+  --nav-bg: #000;
+  --nav-text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+button {
+  background-color: var(--card-bg);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
