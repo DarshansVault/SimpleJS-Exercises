@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Password Strength</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <input type="password" id="pwd" placeholder="Enter password" />
+      <button id="toggle">👁️</button>
+    </div>
+
+    <ul id="rules">
+      <li id="len">❌ Min 8 chars</li>
+      <li id="upper">❌ Uppercase</li>
+      <li id="lower">❌ Lowercase</li>
+      <li id="digit">❌ Number</li>
+      <li id="special">❌ Special char</li>
+    </ul>
+
+    <div class="bar-container">
+      <div id="bar"></div>
+    </div>
+
+    <p id="strength">Weak</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

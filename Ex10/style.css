@@ -1,0 +1,13 @@
+.bar-container {
+  width: 300px;
+  height: 10px;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+#bar {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: all 0.3s;
+}
